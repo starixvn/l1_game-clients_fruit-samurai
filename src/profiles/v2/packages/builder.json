@@ -11,8 +11,8 @@
         "progress": 1,
         "state": "success",
         "stage": "build",
-        "message": "2-11-2025 15:13:21 build success in 3 min 6 s!",
-        "detailMessage": "// ---- build task adsense-h5g-plugin：onAfterBuild ----\r",
+        "message": "7-14-2025 16:50:39 build success in 1 min 10 s!",
+        "detailMessage": "builder:build-project-total (70051ms)\r",
         "options": {
           "name": "cocos-3x",
           "platform": "web-mobile",
@@ -64,7 +64,7 @@
               "inBundle": false
             },
             {
-              "url": "db://assets/game/game.scene",
+              "url": "db://assets/game/game-backup.scene",
               "uuid": "8704bca1-d5f7-4f3c-b0bc-99d64502e283"
             }
           ],
@@ -96,9 +96,12 @@
             "handleTemplateMd5Link": true
           },
           "wasmCompressionMode": false,
-          "buildMode": "normal"
+          "buildMode": "normal",
+          "engineModulesConfigKey": "migrationsConfig",
+          "mangleProperties": false,
+          "inlineEnum": true
         },
-        "time": "2-11-2025 15:10:15",
+        "time": "7-14-2025 16:49:29",
         "dirty": false
       }
     }
