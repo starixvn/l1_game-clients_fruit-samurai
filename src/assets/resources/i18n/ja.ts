@@ -286,7 +286,7 @@ export const languages = {
     },
     "FruitSamurai": {
         "game_icon_name": "Fruit Samurai",
-        "game_name": "フルーツ侍"
+        "game_name": "Fruit Samurai"
     }
 };
 
