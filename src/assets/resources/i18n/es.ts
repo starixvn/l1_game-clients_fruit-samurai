@@ -232,7 +232,7 @@ export const languages = {
         "auto_spin_left": "Giros automáticos restantes",
         "bet_level": "Nivel de Apuesta",
         "bet_level_shorten": "Nivel de Apuesta",
-        "bet_multiplier_x": "Multiplicador de Apuesta 20x",
+        "bet_multiplier_x": "Multiplicador de Apuesta\n20x",
         "big_win": "Big Win",
         "coin_value": "Valor de Moneda",
         "Common-example": "Ejemplo:",
