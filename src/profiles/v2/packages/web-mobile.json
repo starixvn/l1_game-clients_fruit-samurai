@@ -9,7 +9,7 @@
       "useSplashScreen": true,
       "skipCompressTexture": false,
       "mainBundleIsRemote": false,
-      "startScene": "cdeb5c24-9ba8-4cab-a306-8a562fd04b39",
+      "startScene": "1d2b329e-4678-44d5-af3c-6a44131798eb",
       "scenes": [
         {
           "url": "db://assets/game/splash/splash.scene",
