@@ -1,4 +1,4 @@
-import { _decorator, Component, ResolutionPolicy, screen, Size, view } from "cc";
+import { _decorator, Component, view } from "cc";
 const { ccclass, property } = _decorator;
 
 @ccclass
@@ -13,9 +13,10 @@ export class AdjustResolutionSize extends Component {
     }
 
     adjustResolution() {
-        const { width, height } = this.portraitResolution;
-        screen.windowSize = new Size(width, height);
-        view.setDesignResolutionSize(width, height, ResolutionPolicy.FIXED_WIDTH);
-        view.emit("canvas-resize");
+        // const { width, height } = this.portraitResolution;
+        // screen.windowSize = new Size(width, height);
+        // view.setDesignResolutionSize(width, height, ResolutionPolicy.FIXED_WIDTH);
+        // view.emit("canvas-resize");
+        view.resizeWithBrowserSize(true);
     }
 }
