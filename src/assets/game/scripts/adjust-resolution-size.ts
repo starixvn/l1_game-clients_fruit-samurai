@@ -1,4 +1,4 @@
-import { _decorator, Component, ResolutionPolicy, screen, Size, view } from "cc";
+import { _decorator, Component, screen, Size } from "cc";
 const { ccclass, property } = _decorator;
 
 @ccclass
@@ -18,7 +18,6 @@ export class AdjustResolutionSize extends Component {
         const newWidth = ratioScale * width;
 
         screen.windowSize = new Size(newWidth, window.innerHeight);
-        view.setDesignResolutionSize(width, height, ResolutionPolicy.FIXED_HEIGHT);
     }
 
     private setupResizeListener() {
