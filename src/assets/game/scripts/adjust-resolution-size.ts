@@ -9,41 +9,24 @@ export class AdjustResolutionSize extends Component {
     };
 
     protected onLoad(): void {
-        //this.adjustResolution();
         this.setupResizeListener();
     }
 
     adjustResolution() {
-        //view.resizeWithBrowserSize(true);
         const { width, height } = this.portraitResolution;
         const ratioScale = window.innerHeight / height;
         const newWidth = ratioScale * width;
 
         screen.windowSize = new Size(newWidth, window.innerHeight);
         view.setDesignResolutionSize(width, height, ResolutionPolicy.FIXED_HEIGHT);
-
-        // Emit resize event
-        //director.emit("canvas-resize");
     }
 
     private setupResizeListener() {
-        // Listen for canvas resize events
-        //director.on("canvas-resize", this.onCanvasResize, this);
-
         // Listen for window resize events
         window.addEventListener("resize", () => {
             setTimeout(() => {
                 this.adjustResolution();
             }, 100);
         });
-    }
-
-    private onCanvasResize() {
-        // Handle any additional resize logic here
-        //console.log("Canvas resized");
-    }
-
-    protected onDestroy(): void {
-        // director.off("canvas-resize", this.onCanvasResize, this);
     }
 }
