@@ -2,7 +2,7 @@ import { _decorator, Component, ResolutionPolicy, screen, Size, view } from "cc"
 const { ccclass, property } = _decorator;
 
 @ccclass
-export class AdjutsResolutionSize extends Component {
+export class AdjustResolutionSize extends Component {
     private readonly portraitResolution = {
         width: 786,
         height: 1398,
