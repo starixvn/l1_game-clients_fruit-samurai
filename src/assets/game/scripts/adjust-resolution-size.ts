@@ -1,4 +1,4 @@
-import { _decorator, Component, director, ResolutionPolicy, screen, Size, view } from "cc";
+import { _decorator, Component, ResolutionPolicy, screen, Size, view } from "cc";
 const { ccclass, property } = _decorator;
 
 @ccclass
@@ -9,26 +9,26 @@ export class AdjustResolutionSize extends Component {
     };
 
     protected onLoad(): void {
-        this.adjustResolution();
+        //this.adjustResolution();
         this.setupResizeListener();
     }
 
     adjustResolution() {
+        //view.resizeWithBrowserSize(true);
         const { width, height } = this.portraitResolution;
         const ratioScale = window.innerHeight / height;
         const newWidth = ratioScale * width;
 
         screen.windowSize = new Size(newWidth, window.innerHeight);
         view.setDesignResolutionSize(width, height, ResolutionPolicy.FIXED_HEIGHT);
-        view.resizeWithBrowserSize(true);
 
         // Emit resize event
-        director.emit("canvas-resize");
+        //director.emit("canvas-resize");
     }
 
     private setupResizeListener() {
         // Listen for canvas resize events
-        director.on("canvas-resize", this.onCanvasResize, this);
+        //director.on("canvas-resize", this.onCanvasResize, this);
 
         // Listen for window resize events
         window.addEventListener("resize", () => {
@@ -40,10 +40,10 @@ export class AdjustResolutionSize extends Component {
 
     private onCanvasResize() {
         // Handle any additional resize logic here
-        console.log("Canvas resized");
+        //console.log("Canvas resized");
     }
 
     protected onDestroy(): void {
-        director.off("canvas-resize", this.onCanvasResize, this);
+        // director.off("canvas-resize", this.onCanvasResize, this);
     }
 }
