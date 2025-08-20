@@ -1,22 +1,30 @@
 {
     "lobbyNames": {
         "en": "Fruit Samurai",
+        "es": "Fruit Samurai",
+        "fil_ph": "Fruit Samurai",
         "id": "Fruit Samurai",
+        "ja": "Fruit Samurai",
+        "ko": "과일 사무라이",
+        "pt_br": "Samurai das Frutas",
         "th": "ผลไม้ซามูไร",
+        "tr": "Meyve Samurayı",
         "vi": "Chém\nHoa Quả",
         "zh_cn": "武士水果",
-        "zh_tw": "武士水果",
-        "ja": "Fruit Samurai",
-        "es": "Fruit Samurai"
+        "zh_tw": "武士水果"
     },
     "gameNames": {
         "en": "Fruit Samurai",
+        "es": "Fruit Samurai",
+        "fil_ph": "Fruit Samurai",
         "id": "Fruit Samurai",
+        "ja": "Fruit Samurai",
+        "ko": "과일 사무라이",
+        "pt_br": "Samurai das Frutas",
         "th": "ผลไม้ซามูไร",
+        "tr": "Meyve Samurayı",
         "vi": "Chém Hoa Quả",
         "zh_cn": "武士水果",
-        "zh_tw": "武士水果",
-        "ja": "Fruit Samurai",
-        "es": "Fruit Samurai"
+        "zh_tw": "武士水果"
     }
 }
